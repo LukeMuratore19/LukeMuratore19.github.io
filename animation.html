@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	
+	#square{
+
+		width:125px;
+		height:125px;
+		background-image:url("https://assets.sbnation.com/assets/2251475/lebronkingjam.gif");
+		background-size:contain;
+		animation-name:dance;
+		animation-duration:10s;
+		animation-iteration-count:infinite;
+
+	}	
+
+	@keyframes dance{
+
+		0%{
+			width:00px;
+			height:00px;
+
+		}
+
+		
+
+		50%{
+			width:700px;
+			height:700px;
+			transform:rotate(360deg);
+			border-radius:50%;
+			
+		}
+
+		
+		}
+
+		100%{
+			width:00px;
+			height:00px;
+			
+		}
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="square"></div>
+
+</body>
+</html>
