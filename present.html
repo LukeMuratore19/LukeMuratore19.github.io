@@ -9,24 +9,54 @@
 	<style type="text/css">
 		
 		#present{
-
-			 height:400px;
-			 width:400px;
+			top:0px;
+			 height:1000px;
+			 width:90%;
 			 background-image:url(Keith.png);
-			 background-size:contain;
+			 background-size:cover;
 			 background-repeat: no-repeat;
-
+			 background-position:center;
 		}
 
 
+		body{
+			margin:0px;
+		}
 
 	</style>
+
+	
 </head>
 <body>
+
+	<a href="index.html">GO BACK!</a>
+
+	
+	<center>
+		<h1>50 picture for 50 awsome years</h1>
+		<h3>you will have to scole up and down a bit</h3>
+		<h3>click to change pictures!</h3>
+	</center>
 
 	<center>
 		<div id="present"></div>
 	</center>
+
+	<script type="text/javascript">
+
+		var x = 0
+
+		present.addEventListener("click", function(){
+			x = x +1
+			console.log(x)
+				present.style.backgroundImage = "url(./dad/" + x + ".jpeg)"
+
+			})
+
+
+</script>
+
+
 
 </body>
 </html>
