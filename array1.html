@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		#bank{
+			height:5000px;
+			width:5000px;
+			background-color:white;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+		#blank{
+			height:720px;
+			width:1500px;
+			background-color:white;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+
+	Who is going to win NL MVP in 2024?
+
+<h1>
+	
+
+</h1>
+
+	<div id="blank"></div>
+	<div id="bank"></div>
+
+
+	<script type="text/javascript">
+		
+
+		var nlMVP = ["Ronald Acuna Jr.", 
+					"Mookie Betts", 
+					"Shohei Othani", 
+					"Fernado Tatis Jr.", 
+					"Bryce Harper", 
+					"Pete Alonso",
+					"Freddie Freeman",
+					"Francisco Lindor",]
+
+
+		var player = ["url(acuna.gif)", 
+					"url(mookie.gif)", 
+					"url(othani.gif)", 
+					"url(tatis.gif)", 
+					"url(harper.gif)", 
+					"url(pete-alonso.gif)", 
+					"url(freddie.gif)", 
+					"url(lindor.gif)"]
+
+
+		document.addEventListener("click", function(){
+			var random = Math.round(Math.random()*7)
+			console.log(nlMVP[random])
+			blank.innerText = nlMVP[random];
+			blank.style.backgroundImage = player[random];
+
+
+		})
+
+
+	</script>
+
+</body>
+</html>

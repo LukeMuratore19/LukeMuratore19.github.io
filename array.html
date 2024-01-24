@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		#bank{
+			height:5000px;
+			width:5000px;
+			background-color:white;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+		#blank{
+			height:720px;
+			width:1500px;
+			background-color:white;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+Who is going to win AL MVP in 2024?
+
+<h1>
+	
+
+</h1>
+
+	<div id="blank"></div>
+	<div id="bank"></div>
+
+
+	
+
+	<script type="text/javascript">
+		
+
+		var alMVP = ["Aaron Judge", 
+					"Juan Soto", 
+					"Yordan Alvarez", 
+					"Corey Seager", 
+					"Julio Rodriguez", 
+					"Adley Rutschman",
+					"Mike Trout",
+					"Vladimir Guerrero Jr."]
+
+		
+
+		var player = ["url(judge.gif)", 
+					"url(soto.gif)", 
+					"url(yordan.gif)", 
+					"url(seager.gif)", 
+					"url(jrod.gif)", 
+					"url(adley.gif)", 
+					"url(trout.gif)", 
+					"url(vladdy.gif)"]
+
+
+		document.addEventListener("click", function(){
+			var random = Math.round(Math.random()*7)
+			console.log(alMVP[random])
+			blank.innerText = alMVP[random];
+			blank.style.backgroundImage = player[random];
+
+
+		})
+
+
+	</script>
+
+</body>
+</html>
