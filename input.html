@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+who has the best shoes?
+	<input id="input"></input>
+
+	<button id="button">submit</button>
+
+	<div id="answer"></div>
+
+	<script type="text/javascript">
+
+		button.addEventListener("click", function(){
+
+			console.log(input.value)
+			
+			if (input.value == "Luke") 
+				{answer.innerText = "you are 100% correct"}
+			
+			else {answer.innerText = "you are" + Math.round(Math.random()*100) + "% correct!"}
+
+			input.value = " "
+		})
+		
+
+	</script>
+
+</body>
+</html>

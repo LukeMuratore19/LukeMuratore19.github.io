@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+
+	<style type="text/css">
+		
+		.mlblogo{
+			height:500px;
+			width:500px;
+			background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png")
+
+		}
+
+		.nllogo{
+			height:500px;
+			width:500px;
+			background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/MLB_National_League_logo.svg/1200px-MLB_National_League_logo.svg.png")
+
+		}
+
+		.allogo{
+			height:500px;
+			width:500px;
+			background-image:url("https://upload.wikimedia.org/wikipedia/en/5/54/American_League_logo.svg")
+
+	</style>
+
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+				<section>Slide 3</section>
+			</div>
+		</div>
+
+		<div id="mlblogo"></div>
+		<div id="nllogo"></div>
+		<div id="allogo"></div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
